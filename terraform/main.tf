@@ -23,6 +23,7 @@ resource "aws_iam_account_password_policy" "strict" {
   #allow_users_to_change_password = true
   max_password_age = 365
   #password_reuse_prevention      = 12
+  minimum_password_length = 14
 }
 
 module "vpc" {
