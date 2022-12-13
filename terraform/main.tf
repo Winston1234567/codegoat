@@ -24,6 +24,7 @@ resource "aws_iam_account_password_policy" "strict" {
   max_password_age = 365
   #password_reuse_prevention      = 12
   minimum_password_length = 14
+  require_lowercase_characters = true
 }
 
 module "vpc" {
