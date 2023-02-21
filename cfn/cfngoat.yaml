@@ -70,6 +70,8 @@ Resources:
       Tags:
         - Key: Name
           Value: !Sub "${AWS::AccountId}-${CompanyName}-${Environment}-data"
+      VersioningConfiguration:
+        Status: Enabled
 
 Outputs:
   EC2PublicDNS:
