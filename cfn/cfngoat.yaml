@@ -70,6 +70,8 @@ Resources:
       Tags:
         - Key: Name
           Value: !Sub "${AWS::AccountId}-${CompanyName}-${Environment}-data"
+      PublicAccessBlockConfiguration:
+        IgnorePublicAcls: True
 
 Outputs:
   EC2PublicDNS:
