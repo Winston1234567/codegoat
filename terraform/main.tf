@@ -27,6 +27,7 @@ resource "aws_iam_account_password_policy" "strict" {
   require_lowercase_characters = true
   password_reuse_prevention = 24
   require_symbols = true
+  require_uppercase_characters = true
 }
 
 module "vpc" {
