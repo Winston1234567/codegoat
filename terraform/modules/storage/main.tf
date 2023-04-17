@@ -130,7 +130,7 @@ resource "aws_s3_bucket_public_access_block" "public_access" {
   ignore_public_acls = var.public_var
   block_public_acls   = var.public_var
   block_public_policy = var.public_var
-  restrict_public_buckets = var.public_var
+  restrict_public_buckets = true
 }
 
 resource "aws_s3_bucket_acl" "private_access_acl" {
