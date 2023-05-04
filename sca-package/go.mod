@@ -26,7 +26,7 @@ require (
 	github.com/hashicorp/errwrap v1.1.0
 	github.com/hashicorp/go-checkpoint v0.5.0
 	github.com/hashicorp/go-cleanhttp v0.5.2
-	github.com/hashicorp/go-getter v1.5.10
+	github.com/hashicorp/go-getter v1.6.1
 	github.com/hashicorp/go-hclog v0.15.0
 	github.com/hashicorp/go-multierror v1.1.1
 	github.com/hashicorp/go-plugin v1.4.3
@@ -81,7 +81,7 @@ require (
 )
 
 require (
-	github.com/Azure/go-autorest/autorest/adal v0.9.17 // indirect
+	github.com/Azure/go-autorest/autorest/adal v0.9.17
 	github.com/Azure/go-ntlmssp v0.0.0-20200615164410-66371956d46c
 	github.com/ChrisTrenkamp/goxpath v0.0.0-20190607011252-c5096ec8773d
 	github.com/abdullin/seq v0.0.0-20160510034733-d5467c17e7af
@@ -89,26 +89,26 @@ require (
 	github.com/coreos/go-systemd v0.0.0-20181012123002-c6f51f82210d // indirect
 	github.com/dylanmei/iso8601 v0.1.0
 	github.com/gofrs/uuid v3.3.0+incompatible
-	github.com/golang-jwt/jwt v3.2.2+incompatible // indirect
-	github.com/golang-jwt/jwt/v4 v4.1.0 // indirect
+	github.com/golang-jwt/jwt v3.2.2+incompatible
+	github.com/golang-jwt/jwt/v4 v4.1.0
 	github.com/gopherjs/gopherjs v0.0.0-20181017120253-0766667cb4d1
 	github.com/hashicorp/go-msgpack v0.5.4 // indirect
-	github.com/hashicorp/yamux v0.0.0-20181012175058-2f1d1f20f75d // indirect
-	github.com/imdario/mergo v0.3.12 // indirect
+	github.com/hashicorp/yamux v0.0.0-20181012175058-2f1d1f20f75d
+	github.com/imdario/mergo v0.3.12
 	github.com/jtolds/gls v4.2.1+incompatible
-	github.com/kr/pty v1.1.5 // indirect
+	github.com/kr/pty v1.1.5
 	github.com/masterzen/simplexml v0.0.0-20190410153822-31eea3082786 // indirect
-	github.com/mitchellh/go-testing-interface v1.0.4 // indirect
+	github.com/mitchellh/go-testing-interface v1.0.4
 	github.com/mozillazg/go-httpheader v0.3.0
-	github.com/neelance/astrewrite v0.0.0-20160511093645-99348263ae86 // indirect
-	github.com/neelance/sourcemap v0.0.0-20200213170602-2833bce08e4c // indirect
+	github.com/neelance/astrewrite v0.0.0-20160511093645-99348263ae86
+	github.com/neelance/sourcemap v0.0.0-20200213170602-2833bce08e4c
 	github.com/nu7hatch/gouuid v0.0.0-20131221200532-179d4d0c4d8d
 	github.com/sergi/go-diff v1.2.0 // indirect
 	github.com/shurcooL/go v0.0.0-20200502201357-93f07166e636 // indirect
 	github.com/shurcooL/httpfs v0.0.0-20190707220628-8d4bc4ba7749 // indirect
 	github.com/smartystreets/assertions v0.0.0-20180927180507-b2de0cb4f26d
 	github.com/smartystreets/goconvey v0.0.0-20180222194500-ef6db91d284a
-	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
+	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c
 	gopkg.in/ini.v1 v1.66.2
 )
 
