@@ -59,6 +59,7 @@ resource "aws_db_instance" "example_db" {
   tags = merge(var.default_tags, {
     Name = "example_db_${var.environment}"
   })
+  iam_database_authentication_enabled = true
 }
 
 resource "aws_ssm_parameter" "example_ssm_db_host" {
