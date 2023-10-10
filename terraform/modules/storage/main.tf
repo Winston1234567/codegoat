@@ -121,6 +121,39 @@ resource "aws_s3_bucket" "destination" {
   }
 }
 
+
+resource "aws_s3_bucket_versioning" "destination" {
+  bucket = aws_s3_bucket.destination.id
+
+  versioning_configuration {
+    status = "Enabled"
+  }
+}
+
+
+
+resource "aws_s3_bucket" "destination_log_bucket" {
+  bucket = "destination-log-bucket"
+}
+
+resource "aws_s3_bucket_logging" "destination" {
+  bucket = aws_s3_bucket.destination.id
+
+  target_bucket = aws_s3_bucket.destination_log_bucket.id
+  target_prefix = "log/"
+}
+
+
+resource "aws_s3_bucket_server_side_encryption_configuration" "destination" {
+  bucket = aws_s3_bucket.destination.bucket
+
+  rule {
+    apply_server_side_encryption_by_default {
+      sse_algorithm     = "aws:kms"
+    }
+  }
+}
+
 resource "aws_iam_role" "replication" {
   name = "aws-iam-role"
   assume_role_policy = <<POLICY
